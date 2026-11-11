@@ -1,0 +1,26 @@
+info:
+  name: Insertar producto
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: https://act3.oaxacoders.tech/productos/insertar?nombre=Impresora ASUS&precio=4500&categoria=2
+  params:
+    - name: nombre
+      value: Impresora ASUS
+      type: query
+    - name: precio
+      value: "4500"
+      type: query
+    - name: categoria
+      value: "2"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,29 @@
+info:
+  name: actualizar un producto
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: https://act3.oaxacoders.tech/productos/actualizar?id=16&nombre=Impresora HP RZ45&precio=21000&categoria=2
+  params:
+    - name: id
+      value: "16"
+      type: query
+    - name: nombre
+      value: Impresora HP RZ45
+      type: query
+    - name: precio
+      value: "21000"
+      type: query
+    - name: categoria
+      value: "2"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
